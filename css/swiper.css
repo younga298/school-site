@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/*메인 스와이퍼 */
+
+.sou_swiper_wrap .swiper {
+  border-radius: 33px;
+}
+
+.sou_swiper_wrap .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #796262;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 440px;
+}
+
+.sou_swiper_wrap .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#sou_main_slide {
+  height: auto;
+  margin-top: 15px;
+  width: 100%;
+}
+.sou_main_div {
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.sou_swiper_wrap {
+  flex: 0 0 90%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px 25px 0 25px;
+  box-sizing: border-box;
+}
+
+
+.sou_NaviTool {
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  position: absolute;
+  z-index:10;
+}
+
+
+/* 학교앨범 스와이퍼 */
+ 
+.sou_school_list1 .swiper {
+  width: 100%;
+  height: 90%;
+}
+
+.sou_school_list1 .swiper-slide {
+  text-align: start;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: -18px; */
+}
+
+.sou_school_list1 a{
+  display: block;
+  width: 100%;
+}
+.sou_school_list1 h3 {
+  display: block;
+  width: 96%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 19px;
+}
+
+.sou_school_list1 .swiper-slide img {
+  display: block;
+  width: 340px;
+  height: 235px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.sou_school_titleBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.sou_school_moveBtn {
+  display: flex;
+  gap: 11px;
+}
+.moveBtn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
