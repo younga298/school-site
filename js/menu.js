@@ -48,17 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // ------------------------------------------
   toggleButtons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-      e.stopPropagation(); // 중복이벤트 막기(안할 경우 버튼 토클 활성화 x)
+      e.stopPropagation(); // 중복이벤트 막기
       // 클릭된 버튼의 가장 가까운 메뉴 항목(li)을 찾음
       const parentLi = btn.closest(".has-sub");
-
       // 해당 메뉴에 submenu-open 클래스를 토글 (열고 닫기)
       if (parentLi) {
         parentLi.classList.toggle("submenu-open");
       }
     });
   });
-
   // -------------------------------
   // [2] 서브메뉴가 있는 li 클릭 시 : 서브메뉴 열고 닫기
   // (단, 서브메뉴 내부 항목 클릭은 예외로 처리)
@@ -69,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target.closest(".subMenu-item")) {
         return; // 클릭 무시하고 종료
       }
-
       // 서브메뉴 토글
       item.classList.toggle("submenu-open");
 
